@@ -22,11 +22,11 @@ function Search() {
 
     </form>
 
-    <section className="item-section mt-4 container">
+    <section className="container mt-4 item-section">
         <h2 className="font-normal ">Inspiration for your first order</h2>
 
         <div className="row">
-            <Cards />
+            <Cards data= {fdata} />
         </div>
 
     </section>
