@@ -45,17 +45,23 @@ body {
 
 
 
-
 .Card-container{
-    background-color: whitesmoke;
     padding: 10px;
     display: inline-block;
     font-family: sans-serif;
     border-radius: 5px;
     width: 300px;
+    border: 1px solid black;
+    margin:  10px 35px;
+    cursor: pointer;
+    transition: .4s;
+}
+.Card-container:hover{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 .Card-container img{
     width: 100%;
+    height: 200px;
     border-radius: 3px;
 }
 .left-text{
@@ -86,11 +92,16 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+
+}
+.little img{
+    width: 20px;
+    height: 20px;
 }
 .little p{
     font-size: .8rem;
     margin-left: 10px;
 }
 .line{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(161, 154, 154);
 }

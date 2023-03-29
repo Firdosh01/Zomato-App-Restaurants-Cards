@@ -9,20 +9,20 @@ function Cards({ data }) {
           return (
             <>
               <div class="Card-container">
-                <img src="https://th.bing.com/th/id/OIP.djpxK53trOX6J86sSNK9FQHaE5?pid=ImgDet&rs=1" alt="" />
+                <img src= {element.imgdata} alt="" />
 
                 <div class="left-text">
-                  <h3>Grill Inn</h3>
-                  <span>3.8★</span>
+                  <h3>{element.rname}</h3>
+                  <span>{element.rating}★</span>
                 </div>
                 <div class="right-text">
-                  <p>Burger, Pizza, Sandwich, Fast</p>
-                  <p>₹100 for one</p>
+                  <p>{element.address}</p>
+                  <p>{element.price}</p>
                 </div>
                 <div className='line'></div>
                 <div class="little">
-                  <h3>Img</h3>
-                  <p>725+ orders placed from here recently</p>
+                  <img src={element.arrimg} alt="" />
+                  <p>{element.somedata}</p>
 
                 </div>
               </div>

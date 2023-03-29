@@ -25,7 +25,7 @@ function Search() {
     <section className="container mt-4 item-section">
         <h2 className="font-normal ">Inspiration for your first order</h2>
 
-        <div className="row">
+        <div className="flex items-start justify-center row">
             <Cards data= {fdata} />
         </div>
 
