@@ -22,7 +22,7 @@ function Search() {
 
     </form>
 
-    <section className="container mt-4 item-section">
+    <section className="container">
         <h2 className="font-normal ">Inspiration for your first order</h2>
 
         <div className="flex items-start justify-center row">

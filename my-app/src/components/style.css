@@ -42,7 +42,9 @@ body {
     cursor: pointer;
 
 }
-
+.container h2{
+    margin-top: 40px;
+}
 
 
 .Card-container{
@@ -51,8 +53,8 @@ body {
     font-family: sans-serif;
     border-radius: 5px;
     width: 300px;
-    border: 1px solid black;
-    margin:  10px 35px;
+    margin:  10px 5px;
+    margin-left: 50px;
     cursor: pointer;
     transition: .4s;
 }
