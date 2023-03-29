@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './style.css'
 import Fooddata from './FoodData'
 import Cards from './Cards'
@@ -7,6 +7,14 @@ function Search() {
 
     const [fdata, setfdata] = useState(Fooddata)
     console.log(fdata)
+
+    const [copydata, setCopydata] = useState( [])
+    
+    useEffect ( ()=> {
+        setTimeout ( () => {
+            setCopydata(Fooddata)
+        },3000)
+    },[])
 
     const zomatologo = "https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
   return (
@@ -26,7 +34,7 @@ function Search() {
         <h2 className="font-normal ">Inspiration for your first order</h2>
 
         <div className="flex items-start justify-center row">
-            <Cards data= {fdata} />
+            { copydata && copydata.length ? <Cards data= {fdata} />: "empty"}
         </div>
 
     </section>
