@@ -17,7 +17,7 @@ function Search() {
             setCopydata(fdata)
         }else{
             let storeData = copydata.filter((element, k) => {
-                element.rname.toLowerCase().match(getchangeData)
+              return  element.rname.toLowerCase().match(getchangeData);
               
             })
             setCopydata(storeData)
