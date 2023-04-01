@@ -36,13 +36,15 @@ function Search() {
         <>
             <div className='wrapper'>
                 <img src={zomatologo} alt="" />
-                <h2 style={{ color: "#1b1464", cursor: "pointer" }} className="mt-3">Search Filter App</h2>
+                <ul>
+                    <li>Log in</li>
+                    <li>Sign up</li>
+                </ul>
             </div>
 
             <form className='form'>
                 <input type="text" placeholder='Search for restaurant, cuision or a dish' onChange={(e) => changeData(e.target.value)} />
                 <button className='btn'>Submit</button>
-
             </form>
 
             <section className="container">

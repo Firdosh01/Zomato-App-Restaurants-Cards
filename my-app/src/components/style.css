@@ -27,7 +27,6 @@ body {
     width: 350px;
     padding: 10px 10px;
     margin-right: 10px;
-    /* outline: none; */
     user-select: none;
 }
 
@@ -35,7 +34,8 @@ body {
     border: none;
     outline: none;
     padding: 12px 35px;
-    background-color: #ed4c67;
+    background: tomato;
+
     color: white;
     font-weight: 600;
     border-radius: 3px;
@@ -44,6 +44,15 @@ body {
 }
 .container h2{
     margin-top: 40px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin:  0 10px;
+    font-size: 1.3rem;
+    color: rgb(105, 105, 105);
 }
 
 
