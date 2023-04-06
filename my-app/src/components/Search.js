@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import style from './style.css'
 import Fooddata from './FoodData'
 import Cards from './Cards'
+import Spinner from './Spinner'
 
 function Search() {
 
@@ -51,7 +52,8 @@ function Search() {
                 <h2 className="font-normal ">Inspiration for your first order</h2>
 
                 <div className="flex items-start justify-center row">
-                    {copydata && copydata.length ? <Cards data={copydata} /> : "empty"}
+                    {copydata && copydata.length ? <Cards data={copydata} /> : <Spinner /> }
+                    
                 </div>
 
             </section>
